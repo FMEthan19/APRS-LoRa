@@ -3,11 +3,11 @@ Debe descargar el comprimido y extraerlo para ver los archivos.
 
 # Detalle del proyecto
 Para el proyecto se va a utilizar la placa LILYGO LoRa con un ESP32 Version T3 1.6.1 para poder configurar un iGate utilizado APRS y LoRa para las comunicaciones con otros Trackers. El iGate permite a los Trackers poder transmitir informacion de ubicacion y telemetria sin necesidad de utilizar protocolos comunmente utilizados como WIFI o LTE celular. Mediante LoRa se puede transmitir a grandes distancias utilizando radiofrecuencia para poder tener una comunicacion en zonas rurales o de poco acceso a otros medios o inclusive para poder monitorear flotillas de vehiculos en ruta.
-#iGate configurado y conectado
+# iGate configurado y conectado
 ![image](https://github.com/user-attachments/assets/77538d54-f413-4023-8823-5dda2f805bb9)
-#Configuracion de parametros en Visual SC/Platform IO
+# Configuracion de parametros en Visual SC/Platform IO
 ![image](https://github.com/user-attachments/assets/acc55404-9826-4aa1-9898-ce346679d2a6)
-#Implementacion
+# Implementacion
 - Hardware
 Para implementar APRS con LoRa, es fundamental seleccionar un módulo adecuado como el LILYGO TTGO LoRa32, configurado para operar en la frecuencia de 433.755 MHz, la cual es adecuada para las aplicaciones de APRS. La antena, por su parte, debe estar sintonizada específicamente a esta frecuencia para optimizar el alcance y la calidad de la señal, asegurando transmisiones confiables. Además, se requiere una fuente de alimentación robusta, preferentemente una batería de larga duración, que garantice suficiente energía para un funcionamiento continuo en entornos remotos o de difícil acceso.
 - Software
