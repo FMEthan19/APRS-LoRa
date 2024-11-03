@@ -13,13 +13,15 @@ El módulo LILYGO TTGO LoRa32 es una plataforma de desarrollo que combina capaci
 
 # Configuracion
 - Paso 1: Hardware
-Conecte la batería LP103454 al módulo LILYGO TTGO LoRa32.
-Asegúrese de que todos los cables estén correctamente conectados.
+1. Conecte la batería LP103454 al módulo LILYGO TTGO LoRa32.
+2. Asegúrese de que todos los cables estén correctamente conectados.
 - Paso 2: Software
-Descargue el software desde el repositorio oficial [LoRa APRS iGate GitHub](https://github.com/richonguzman/LoRa_APRS_iGate).
-Siga las instrucciones del repositorio para instalar las dependencias necesarias.
+1. Descargue el software desde el repositorio oficial [LoRa APRS iGate GitHub](https://github.com/richonguzman/LoRa_APRS_iGate).
+2. Siga las instrucciones del repositorio para instalar las dependencias necesarias.
 - Paso 3: Configuracion del iGate desde Platform IO
- - Defina el parametro de callsign
- - Ingrese las coordenadas de latitud y longitud del lugar de operación.
- - Configure los parametros para la conexion a red, SSID y la clave de acceso.
+1. Defina el parametro de callsign
+2. Ingrese las coordenadas de latitud y longitud del lugar de operación.
+3. Configure los parametros para la conexion a red, SSID y la clave de acceso.
 # Uso del dispositivo
+1. Una vez confiugurado el dispositivo, enciendalo y verifique la conexion a red y APRS.
+2. 2. Verifique la conexion en la plataforma https://aprs.fi/, se visualizara el signo escogido en la ubicacion determinada.
