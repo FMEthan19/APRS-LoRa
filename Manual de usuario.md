@@ -9,7 +9,17 @@ garantizando una comunicación confiable y un consumo de energía optimizado par
 
 El módulo LILYGO TTGO LoRa32 es una plataforma de desarrollo que combina capacidades de Wi-Fi, Bluetooth y LoRa en un solo dispositivo basado en el chip ESP32 de Espressif. Este módulo es ideal para proyectos de IoT, ya que permite la transmisión de datos a largas distancias con un bajo consumo energético. Integra un microcontrolador ESP32 y un transceptor LoRa SX1276/SX1278,
  proporcionando una opción flexible y económica para aplicaciones de telemetría, comunicación de sensores y sistemas de seguimiento. También incluye una pantalla OLED para visualizar datos directamente en el dispositivo, facilitando la supervisión en tiempo real y opera en la banda de frecuencia de los 70 cm.
+![image](https://github.com/user-attachments/assets/71423296-4cbb-4a8d-9151-fcc052028e19)
 
 # Configuracion
-
+- Paso 1: Hardware
+Conecte la batería LP103454 al módulo LILYGO TTGO LoRa32.
+Asegúrese de que todos los cables estén correctamente conectados.
+- Paso 2: Software
+Descargue el software desde el repositorio oficial [LoRa APRS iGate GitHub](https://github.com/richonguzman/LoRa_APRS_iGate).
+Siga las instrucciones del repositorio para instalar las dependencias necesarias.
+- Paso 3: Configuracion del iGate desde Platform IO
+ - Defina el parametro de callsign
+ - Ingrese las coordenadas de latitud y longitud del lugar de operación.
+ - Configure los parametros para la conexion a red, SSID y la clave de acceso.
 # Uso del dispositivo
