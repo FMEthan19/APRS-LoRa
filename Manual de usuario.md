@@ -22,6 +22,13 @@ El módulo LILYGO TTGO LoRa32 es una plataforma de desarrollo que combina capaci
 1. Defina el parametro de callsign
 2. Ingrese las coordenadas de latitud y longitud del lugar de operación.
 3. Configure los parametros para la conexion a red, SSID y la clave de acceso.
+# Configuracion secundaria
+1. Se ingresa al siguiente enlaces: https://riojanosporlaradio.com/lora-aprs-for-dummies/
+2. Se siguen los pasos, esta configuracion se realiza haciendo uso del iGate como un router para conectarse por medio de un dispositivo movil a la red wifi del mismo.
+3. Luego se ingresa a la direccion IP descrita en la pantalla configurar todos los parametros y cargarlos en el dispostivio, las instrucciones a detalle se encuentran en el enlace.
+   Imagen de ejemplo:
+   ![image](https://github.com/user-attachments/assets/a5f42b6b-1844-4088-8486-5fc969212b68)
+
 # Uso del dispositivo
 1. Una vez confiugurado el dispositivo, enciendalo y verifique la conexion a red y APRS.
 2. Verifique la conexion en la plataforma https://aprs.fi/, se visualizara el signo escogido en la ubicacion determinada.
