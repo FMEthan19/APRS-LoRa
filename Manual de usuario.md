@@ -5,6 +5,35 @@ APRS LoRa combina el sistema de paquetes automáticos APRS con la tecnología de
 A lo largo del manual, se explican aspectos clave como la conexión a redes Wi-Fi, el uso de formatos de datos AX.25, y la verificación en plataformas como aprs.fi. Esta integración es ideal para aplicaciones de monitoreo de fauna y telemetría ambiental, 
 garantizando una comunicación confiable y un consumo de energía optimizado para dispositivos en entornos remotos.
 
+# Diagrama aplicacion
+
+El monitoreo de especies en peligro de extinción es esencial para su preservación, ya que proporciona datos cruciales sobre su comportamiento, desplazamiento y condiciones ambientales. Esto permite tomar decisiones informadas para implementar medidas de conservación. Además, el seguimiento continuo facilita identificar amenazas como cambios en su hábitat o actividades humanas perjudiciales, lo que contribuye a proteger la biodiversidad y los ecosistemas.
+
+El diagrama presentado describe un sistema de comunicación basado en APRS (Automatic Packet Reporting System) sobre la tecnología LoRa, diseñado específicamente para el monitoreo de estas especies. Este sistema tiene varias etapas que trabajan de manera conjunta para recolectar, procesar, transmitir y visualizar datos relevantes en tiempo real.
+ ![image](https://github.com/user-attachments/assets/bf71abe4-f8af-4931-8160-c84500b36d66)
+
+Fuente de energía y sensores:
+
+- Batería externa:
+Proporciona la energía necesaria para el funcionamiento del sistema. Incluye un controlador de carga, un circuito de protección, y una etapa DC-DC para regular la tensión. También cuenta con un indicador LED para el monitoreo del estado de la batería.
+Sensores de temperatura y velocidad: Recopilan datos ambientales relevantes y de movimiento del animal monitorizado.
+- Módulo GPS externo:
+Este módulo calcula la posición utilizando las cadenas NMEA obtenidas de las señales satelitales. Esto permite conocer la ubicación precisa de la especie en cualquier momento.
+
+- Unidad central de procesamiento (ESP32):
+Filtra y analiza los datos provenientes del GPS y los sensores.
+Decodifica las señales utilizando el protocolo AX.25, común en aplicaciones APRS.
+Gestiona las interrupciones para optimizar el flujo de datos hacia el transmisor.
+
+- Transmisión mediante LILYGO LoRa32:
+Este módulo codifica los datos, los sincroniza en paquetes y los transmite mediante una antena. Su tecnología LoRa permite una comunicación de largo alcance con un bajo consumo de energía, ideal para aplicaciones remotas.
+
+- Receptor y procesamiento en el iGate:
+El iGate descodifica las señales recibidas, valida la información y filtra los datos para garantizar su precisión antes de retransmitirlos a un servidor.
+
+- Servidor y aplicación:
+Los datos se almacenan y procesan en un servidor, donde se actualizan en tiempo real.
+Una aplicación visualiza la información recopilada, permitiendo su análisis y mapeo. Esto facilita la interpretación de la ubicación, temperatura y velocidad del animal, además del estado de la batería del dispositivo.
 # Descripcion del modulo iGate y componentes
 
 El módulo LILYGO TTGO LoRa32 es una plataforma de desarrollo que combina capacidades de Wi-Fi, Bluetooth y LoRa en un solo dispositivo basado en el chip ESP32 de Espressif. Este módulo es ideal para proyectos de IoT, ya que permite la transmisión de datos a largas distancias con un bajo consumo energético. Integra un microcontrolador ESP32 y un transceptor LoRa SX1276/SX1278,
